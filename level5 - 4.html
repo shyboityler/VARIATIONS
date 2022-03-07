@@ -6,7 +6,28 @@
         <link rel="stylesheet" href="5.4.css"
 </head>
 <style>
-
+  body a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+    body a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+    body a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* selected link */
+    body a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
 </style>
 
 <body>
@@ -16,7 +37,7 @@
     position: absolute;
     width: 100px;
     height: 660px;
-    z-index: 2;" controls autoplay>
+    z-index: -1;" controls autoplay>
   <source src="byetone.mp3" type="audio/mpeg" >
   </audio>
  
@@ -26,7 +47,7 @@
     top: -494px;
     width: 102px;
     height: 600px;
-    z-index:2">
+    z-index:-1">
     <source src="relativity.mp3" type="audio/mpeg" >
   </audio>
 
@@ -103,22 +124,24 @@
         </div>
 
   <div style="
+  z-index:1;
   width: 49px;
   height: 40px;
   border-bottom:1px solid black;
   position: absolute;
   left: 30px;
   top:0px;">
-  <br>HOME
+  <br><a href="index2.html">HOME</a>
   </div>
 
   <div style="
+  z-index:1;
   width: 48px;
   height: 40px;
   border-bottom:1px solid black;
   position: absolute;
   right: 30px;
   top:0px;">
-  <br>HOME
+  <br><a href="index.html">HOME</a>
   </div>
       </body>
