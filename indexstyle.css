@@ -4,9 +4,11 @@
     position: absolute;
     left: 626px;
     top: 330px;
+    z-index:1;
 }
 
 .floaters{
+    z-index:0;
     filter:blur(3px);
     color:rgb(187, 187, 187);
     font-size:60px;
@@ -24,3 +26,26 @@
         transform:translateX(170%)
     }
 }
+
+a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
