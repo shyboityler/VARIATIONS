@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Relativity by Sarah Howe for Stephen Hawking</title>
+        <!--inspiratioln:http://fraukeschnoor.de/-->
+    <style>
+
+        body{
+            background-color: rgb(255, 255, 255);
+            min-width:1250px;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        font-family:"Aktiv Grotesk Hair";
+        font-style:normal;
+        font-size:60px;
+        line-height:120%;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        color:white;
+        font-size:15px;
+        font-family:"Courier New";
+        line-height:120%;
+        min-width: 200px; /*How to match the width of the dropdown with the width of the words? */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        transition-delay: 0.1s;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        div.paragraph-one{
+            cursor: url('particle1.png'), move;
+            /*cursor: url('particle.png'),auto;*/
+            margin:0px 10px 0px 10px;
+            color:rgb(0, 0, 0);
+            font-family:"Aktiv Grotesk Hair";
+            font-style:normal;
+            font-size:60px;
+            line-height:150%;
+            padding-top:80px;
+        }
+        
+        div.single-sentence{
+            cursor: help;
+            text-align:center;
+        }
+
+        span{
+            border:1px solid rgb(0, 0, 0);
+            border-radius:12px;
+            padding:0.3px;
+        }
+
+        span.picture1{
+            /*background-color:rgb(255, 255, 255);*/
+            background-image: linear-gradient(to right, rgb(176, 88, 242) 0%, rgba(0, 0, 0, 0) 22%, rgb(77, 176, 183) 100%);
+        }
+
+        span.picture2{
+            /*background-color:rgb(179, 179, 179);*/
+            background-image: linear-gradient(to right, rgb(221, 130, 134) 0%, rgba(0, 0, 0, 0) 31%, rgb(28, 208, 94) 100%);
+
+        }
+
+        .picture3{
+            /*background-color:rgba(255, 255, 255, 0.74);*/
+            background-image: linear-gradient(to right, rgb(204, 119, 25) 0%, rgba(0, 0, 0, 0) 51%, rgb(22, 22, 135) 100%);
+            animation: wave 5s infinite linear;
+            border:1px solid black;
+            border-radius:8px;
+
+        }
+
+        span.picture4{
+            /*background-color:rgb(187, 187, 187);*/
+            background-image:linear-gradient(to right, rgb(173, 44, 197) 0%, rgba(0, 0, 0, 0) 74%, rgb(116, 68, 65) 100%);
+        }
+
+        span.picture5{
+            /*background-color:rgba(94, 94, 94, 0.514);*/
+            background-image:linear-gradient(to right, rgb(186, 146, 211) 0%, rgba(0, 0, 0, 0) 29%, rgb(131, 10, 214) 100%);
+        }
+
+        /*span.picture6{
+            background-color:rgba(190, 190, 190, 0.596);
+            background-image:linear-gradient(to right, rgb(238, 81, 96) 0%, rgba(0, 0, 0, 0) 39%, rgb(237, 24, 21) 100%);
+        }
+        */
+
+        div.picture7{
+            /*background-color:rgba(192, 192, 192, 0.781);*/
+            background-image: linear-gradient(to right, rgb(25, 230, 162) 0%, rgba(0, 0, 0, 0) 60%, rgb(106, 179, 2) 100%);
+            animation: wave 5s infinite linear;
+            border:1px solid black;
+            border-radius:8px;            
+        }
+        span.picture8{
+            /*background-color:rgb(211, 211, 211);*/
+            background-image:linear-gradient(to right, rgb(170, 94, 177) 0%, rgba(0, 0, 0, 0) 32%, rgb(109, 248, 46) 100%);
+        }
+    
+
+        span.picture9{
+            /*background-color:rgb(255, 255, 255);*/
+            background-image:linear-gradient(to right, rgb(79, 171, 126) 0%, rgba(0, 0, 0, 0) 69%, rgb(251, 140, 212) 100%);
+        }
+        
+
+        span.picture10{
+            /*background-color:rgb(148, 147, 147);*/
+            background-image:linear-gradient(to right, rgb(202, 246, 81) 0%, rgba(0, 0, 0, 0) 22%, rgb(147, 14, 178) 100%);
+        }
+
+        p{
+            display:inline;
+            font-family:"Aktiv Grotesk Hair" ;
+            font-style:normal;
+            font-size:60px;
+            line-height:120%;
+
+            
+        }
+
+        #author{
+            color:rgb(0, 0, 0);
+        }
+
+        .floatRight{float:right;margin-left:20px}/*??not working*/
+
+        #heading{
+            margin:0px;
+            padding-top: 7px;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: rgb(54, 54, 54);
+            float: left;
+            width: 1420px;
+            height: 50px;
+            border-top: 1px solid rgb(148, 148, 148);
+            border-radius: 7px;
+            border-bottom: 1px solid rgb(148, 148, 148);
+            
+        }
+
+        .text{
+            font-family:"Aktiv Grotesk Hair";
+            font-size: 36px;
+            animation: my-animation 40s infinite linear;
+            transform: translateX(700px);
+            position:absolute;
+        }
+
+        @keyframes my-animation{
+            from {
+                transform: translateX(1300px);
+            }
+            
+            to {
+                transform: translateX(-1700px);
+            }
+        }
+
+        @keyframes wave{
+            0% {
+                left: 0px;
+                bottom: 0px;
+                transform: rotate(0deg);
+            }
+            25% {
+                left: -50px;
+                bottom: 50px;
+                transform: rotate(-10deg);
+            }
+            50% {
+                left: 0px;
+                bottom: 0px;
+                transform: rotate(0deg);
+            }
+            75% {
+                left: 50px;
+                bottom: 50px;
+                transform: rotate(10deg);
+            }
+
+            100% {
+                left: 0px;
+                bottom: 0px;
+                transform: rotate(0deg);
+        }
+        }
+
+    </style>
+    </head>
+    <body>
+        <div id="heading"> </div>
+        <div class="text" style="top:13px;" >A poem about physics, science, and the space. Enjoy the read.</div>
+       <!--这里面后期放scrolling texts吧-->
+        <div class="paragraph-one">
+        <div class="dropdown">
+            <span class="picture1">Relativity</span> 
+            <div class="dropdown-content">
+            In 1905, <em><u>Albert Einstein</u></em> published the theory of special relativity, which explains how to interpret motion between different inertial frames of reference — that is, places that are moving at constant speeds relative to each other.
+            </div>
+            
+        </div> <p id="author"> by Sarah Howe for Stephen Hawking<p> <br>
+
+        
+        <br>When we wake up brushed by panic in the dark,
+        our pupils grope for the shape of things we know.
+        <br>
+            
+        <div class="dropdown">
+        <span class="picture2">Photons</span>
+        <div class="dropdown-content">
+        A particle of light <br><br>
+        <img src="aphoton.jpg" width="160" height="160">
+        </div> 
+        </div>
+        
+        loosed from 
+        
+        <div class="dropdown">
+        <div class="picture3">slits</div> 
+        <div class="dropdown-content">
+        Double Slits Experiment<br><br>
+        <img src="interference.gif" width="200" height="200">
+        </div> 
+        </div>
+
+
+        
+        like greyhounds at the track
+        reveal light’s 
+
+        <div class="dropdown">
+        <span class="picture4">doubleness</span>
+        <div class="dropdown-content">
+        Wave–particle duality is the concept in quantum mechanics that every particle or quantum entity may be described as either a particle or a wave<br><br>
+        <img src="Waveparticleduality.gif" width="200" height="200">
+        </div> 
+        </div>
+    
+        
+        
+        in their cast shadows that 
+        <div class="dropdown">
+        <span class="picture5">stripe</span>
+        <div class="dropdown-content">
+        "Meaning Waves"
+        </div> 
+        </div>
+        
+        a dimmed lab’s wall<br><br>
+
+        <div class="single-sentence">—particles no more— </div><br><br>
+
+
+        and with a wave bid all 
+        
+        <!--<span class="picture6">-->certainties<!--</span>--> goodbye.
+
+        <br>For what’s sure in a universe that 
+        
+        <div class="dropdown">
+        <div class="picture7">dopplers</div>
+        <div class="dropdown-content">
+        <img src="dopplereffect.png" width="243" height="200">
+        </div> 
+        </div>
+        
+            
+        away like a siren’s midnight cry? <br> They say
+        
+
+        a flash seen from on and off a hurtling train
+        will explain why 
+        
+        <div class="dropdown">
+        <span class="picture8">time dilates</span>
+        <div class="dropdown-content">
+        In physics and relativity, time dilation is the difference in the elapsed time as measured by two clocks.
+        </div> 
+        </div>
+        
+        like a perfect afternoon; 
+        
+        predicts 
+        
+        <div class="dropdown">
+        <span class="picture9"> black holes</span> 
+        <div class="dropdown-content">
+        <img src="Blackhole.png" width="332" height="210" class="floatright">   <!--How to make it align with the right side-->
+        </div> 
+        </div>
+
+
+        where parallel lines
+        will meet, whose stark horizon even starlight,
+        bent in its tracks, can’t resist. <br>If we can think
+        this far, might not our eyes adjust to the dark?<br><br>
+        
+</div>
+    <div id="heading"></div>
+    <div class="text" style="bottom:-1400px;" >A poem about physics, science, and the space. Enjoy the read.</div>
+    <p><br></p>
+    </body>
+</html>

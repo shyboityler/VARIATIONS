@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Relativity by Sarah Howe for Stephen Hawking</title>
+    <!--inspiration: https://www.are.na/block/234542
+    *experiment with auto scrolling and other animation features-->
+<style>
+    @font-face {
+        font-family: "PaytoneOne-Regular";
+        src: url("PaytoneOne-Regular.ttf");
+    }
+    .backgroundimage{
+        background-image:url("098.jpeg");
+        background-attachment: fixed;
+        z-index:0;
+        position:absolute;
+        left:0;
+        top:0;
+        opacity:0.6;
+        height:700%;
+        width:1450px;
+
+    }
+
+    .notpicture{
+        z-index:1;
+        position: absolute;
+        left: 3;
+        top: 3;
+    }
+    body{
+        font-family: PaytoneOne-Regular, sans-serif;
+        text-transform:uppercase;
+    }
+
+    .author{
+        border: 3px solid black;
+        padding:0px 5px;
+        margin-top:30px;
+    }
+
+    #title{
+        margin-bottom:5px;
+    }
+
+    #line{
+        border-bottom:1px solid black;
+        position:absolute;
+    }
+    span{
+        z-index:1;
+    }
+
+    .paraone{
+        position:absolute;
+        border: 3px solid black;
+        padding:0px 5px;
+        margin-top:30px;
+        font-size:30px;
+    }
+    .effect{
+        position:absolute;
+        text-align:center;
+        width:200%;
+        height:50px;
+        overflow:hidden;
+        transform: translateX(100%);
+        animation: my-animation 5s linear infinite;
+        animation-play-state:paused;
+    }
+
+    @keyframes my-animation {
+        from {
+        transform: translateX(110%);
+        }
+        to {
+        transform: translateX(-1000px);
+        }
+    }
+
+    .author:hover{
+        background-color:yellow;
+    }
+
+    .overall:hover .effect{
+     animation-play-state:running;
+    }
+
+    #word{
+        width:200px;
+        height:40px;
+        border: 3px solid black;
+    }
+    #word:hover{
+        background-color:yellow;
+    }
+
+    
+    #doubleslitimage{
+        position:absolute;
+        left: 105px;
+        top: 752px;
+        height: 202px;
+    }
+
+    .ex1,.ex2{
+        transform-origin: top;
+        transition: 1s;
+        transition: 400ms transform ease-in-out;
+        transform-style: preserve-3d;
+        transform: rotateX(85deg);
+        perspective:200px;
+    }
+
+    .doubleness{
+        background-color:gray;
+    }
+
+    .expand1:hover .ex1{
+        background-color:yellow;
+        transform: rotateX(0deg);
+    }
+
+    .expand2:hover .ex2{
+        background-color:yellow;
+        transform: rotateX(0deg);
+    }
+
+    .expand1:hover .doubleness{
+        background-color:yellow;
+    }
+
+    .expand2:hover .doubleness{
+        background-color:yellow;
+    }
+
+    .expand3:hover .doubleness{
+        background-color:yellow;
+    }
+
+    .expand4:hover .doubleness{
+        background-color:yellow;
+    }
+    
+    .ex3, .ex4{
+        transform-origin: right;
+        transition: 2s;
+        transition: 400ms transform ease-in-out;
+        transform-style: preserve-3d;
+        transform: rotateY(89deg);
+        perspective:400px;
+    }
+
+    .expand3:hover .ex3{
+        background-color:yellow;
+        transform:rotateY(0deg);
+
+    }
+
+    .expand4:hover .ex4{
+        background-color:yellow;
+        transform:rotateY(0deg);
+
+    }
+
+    #expand5:hover {
+        background-color:black;
+    }
+
+    img{
+        border:1px solid black;
+    }
+
+
+</style>
+
+<body>
+<div class="backgroundimage"></div>
+    <div class="notpicture">
+    <div id="title">Relativity</div>
+    <span class="author">by</span>
+    <span class="author">Sarah Howe</span>
+    <span class="author">for</span>
+    <span class="author">Stephen Hawking</span>A poem about physics
+    </div>
+    
+
+    <div id="line" style="width:200px;left:400px;top:100px;z-index:0;transform:rotate(-27deg);"></div>
+    <br>
+
+    <span class="paraone" style="left:411px;top:115px;width:450px;height:auto;">
+    When we wake up brushed by panic in the dark,
+    our <br> 
+
+    <div class="overall">
+    <span id="word">pupils</span>
+
+    
+    <div class="effect">Meaning: a part of your eyes</div> 
+    </div>
+</div>
+    
+    <br>grope for the shape of things we know.</span>
+
+    <span class="paraone"style="left:611px;top:715px;width:550px;height:auto;">
+        
+        Photons loosed from 
+        <span class="expand1">
+        <span class="doubleness" style="border:2px solid black;">
+        slits</span>
+        <span class="ex1" style="
+        border: 1px solid black;
+        position: absolute;
+        left: -508px;
+        top: 207px;
+        font-size: 10px;
+        font-style: normal;
+        width: 266px;">
+        Refers to <u>Double-slit experiment</u>, a demonstration that light and matter can display characteristics of both classically defined waves and particles;</span> 
+        </span>
+        <br>like greyhounds at the track,<br>
+        reveal light’s doubleness 
+ 
+        in their cast shadows that stripe a dimmed lab’s wall.<br><br>
+    </span>
+    
+    <img src="doubleslitanimation.gif" alt="doubleslitanimation" width="auto" height="230" id="doubleslitimage">
+    <div id="line" style="width: 845px;left: 67px; top: 576px;z-index: 0;transform: rotate(335.6deg);"></div>
+    <div id="line" style="width: 315px;left: 335px;top: 850px;z-index: 0;transform: rotate(319deg);"></div>
+    <div id="line" style="width: 315px;left: 898px;top: 1107px;z-index: 0;transform: rotate(319deg);"></div>
+    <div id="line" style="width: 314px;left: 774px;top: 1216px;z-index: 0;transform: rotate(319deg);"></div>
+
+    <span class="paraone"style="left: 249px;top: 1285px;width:550px;height:auto;text-align: center;">
+        <span class="expand2">
+        <span class="doubleness" style="border:2px solid black;">
+        —particles no more—<br></span>
+        <span class="ex2" style="
+        border: 1px solid black;
+        position: absolute;
+        left: 437px;
+        top: 600px;
+        font-size: 15px;
+        font-style: normal;
+        width: 415px;
+        ">
+        Refers to the <u>wave-particle duality</u>, a concept in quantum mechanics that every particle or quantum entity may be described as either a particle or a wave. 
+        </span>
+        </span>
+
+        and with a wave<br>
+        bid all certainties goodbye.<br><br>
+    </span>
+    <div id="line" style="width: 482px;left: 229px;top: 1587px;z-index: 0;transform: rotate(24deg);"></div>
+    <img src="Wave-particle_duality.gif" width="auto" height="230" id="Wave-particle_duality" style="
+    position: absolute;
+    height: 234px;
+    left: 690px;
+    top: 1684px;
+    opacity: 0.8;
+    ">
+
+    <span class="paraone"style="left: 57px;top: 2195px;width:550px;height:auto;text-align: center;">
+    For what’s sure in a universe<br>
+    that 
+        <span class="expand3">
+        <span class="doubleness" style="border:2px solid black;">
+        dopplers</span>
+        <span class="ex3" style="
+        border: 1px solid black;
+        position: absolute;
+        left: 470px;
+        top: 329px;
+        font-size: 20px;
+        font-style: normal;
+        width: 194px;
+        height: 267px;
+        ">
+        Refers to <u>dopper effect</u>,the change in frequency of a wave in relation to an observer who is moving relative to the wave source.
+        </span>
+        </span>
+    
+    away like a siren’s midnight cry?<br><br>
+    </span>
+    <div id="line" style="width: 1065px;left: 47px;top: 2112px;z-index: 0;transform: rotate(348deg);"></div>
+    <div id="line" style="width: 190px;left: 580px;top: 2476px;z-index: 0;transform: rotate(55deg);"></div>
+    <img src="dopplereffect.gif" width="auto" height="230" id="dopplereffect" style="
+    position: absolute;
+    height: 270px;
+    left: 728px;
+    top: 2556px;
+    opacity: 0.8;">
+
+    <span class="paraone"style="left: 56px;top: 3038px;width: 568px;height:auto;text-align: center;">
+    They say<br>
+    a flash seen from on and off a hurtling train<br>
+    will explain why 
+        <span class="expand4">
+        <span class="doubleness" style="border:2px solid black;">
+        time dilates
+        </span>
+        <span class="ex4" style="
+        border: 1px solid black;
+        position: absolute;
+        left: 766px;
+        top: 306px;
+        font-size: 19px;
+        font-style: normal;
+        width: 194px;
+        height: 280px;
+        
+        ">
+        Refers to <u>TIME DILATION</u>, the difference in the elapsed time as measured by two clocks. It is a consequence of Einstein's theory of relativity.
+        </span>
+        </span>
+    
+    like a perfect afternoon; <br>
+    </span>
+    <div id="line" style="width: 617px;left: 615px;top: 2949px;z-index: 0;transform: rotate(337deg);"></div>
+    <div id="line" style="width: 397px;left: 636px;top: 3331px;z-index: 0;transform: rotate(14deg);"></div>
+    <img src="time dilation2.gif" width="auto" height="230" id="time dilation2" style="
+    position: absolute;
+    height: 280px;
+    left: 1024px;
+    top: 3377px;
+    ">
+    <span class="paraone" id="expand5" style="left: 56px;top: 3962px;width: 1274px;height:auto;text-align: center;">
+     predicts black holes where parallel lines will meet, <br>
+     whose stark horizon, even starlight, bent in its tracks, can’t resist. <br><br>
+
+     If we can think this far, might not our eyes adjust to the dark?</p><br>
+    </span>
+    <div id="line" style="width: 1300px;left: 31px;top: 3826px;z-index: 0;transform: rotate(345deg);"></div>
+    <img src="black-hole.gif" width="400" height="auto" style="
+    position: absolute;
+    height: 725px;
+    width: auto;
+    left: 57px;
+    top: 4237px;
+    
+    ">
+</span>
+</body>

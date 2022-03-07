@@ -1,0 +1,38 @@
+.script{
+    font-family:dum1 ;
+    animation: scroll 70s infinite linear;
+    transform: translateY(788px);
+    z-index:0
+    }
+
+.pictures{
+    z-index:-1;
+}
+
+.rolling{
+    animation:turn 3s infinite ease-in-out;
+}
+
+    @keyframes scroll {
+    from {
+        transform: translateY(700px);
+    }
+    
+    to {
+        transform: translateY(-1700px);
+    }
+}
+
+    @keyframes turn{
+    from {
+            transform: rotate(0deg);
+        }
+        
+        to {
+            transform: rotate(360deg);
+        }
+    }
+@font-face {
+    font-family:dum1 ;
+    src: url(dum1.ttf);
+}

@@ -1,0 +1,123 @@
+@font-face {
+    font-family: PharmaCare;
+    src: url("PharmaCare.ttf");
+    }
+
+    @font-face {font-family: "GT Pressura Mono Regular";
+     src: url("//db.onlinewebfonts.com/t/226f58ab113a6d821def90a7d6dc2427.eot"); 
+     src: url("//db.onlinewebfonts.com/t/226f58ab113a6d821def90a7d6dc2427.eot?#iefix") 
+     format("embedded-opentype"), url("//db.onlinewebfonts.com/t/226f58ab113a6d821def90a7d6dc2427.woff2") 
+     format("woff2"), url("//db.onlinewebfonts.com/t/226f58ab113a6d821def90a7d6dc2427.woff") 
+     format("woff"), url("//db.onlinewebfonts.com/t/226f58ab113a6d821def90a7d6dc2427.ttf") 
+     format("truetype"), url("//db.onlinewebfonts.com/t/226f58ab113a6d821def90a7d6dc2427.svg#GT Pressura Mono Regular") format("svg"); }
+
+
+    h1{
+        margin-left:0.6cm;
+        margin-top:0.8px;
+        margin-bottom:0px;
+        padding-right:2.5cm;
+        padding-top:4cm;
+        border-right:1px black solid;
+        font-family: PharmaCare, sans-serif;
+        font-size:70px;
+        height: 762px;
+        width:300px;
+        float:left;
+        letter-spacing:10px;
+        border-radius: 30px;
+        color:white;
+
+        
+    }
+
+
+    div.one{
+    float: left;
+    font-size:13px;
+    font-family: "GT Pressura Mono Regular";
+    height:900px;
+    width:200px;
+    padding: 15px; 
+    padding-right:50px;
+    padding-top:0px;
+    color:white; 
+    border-right: 1px dotted rgb(0, 0, 0);
+    border-radius: 30px;
+    }
+
+    div.two{
+    float: left;
+    font-size:14px;
+    font-family: "GT Pressura Mono Regular";
+    height:900px;
+    width:400px;
+    padding: 15px; 
+    padding-right:30px;
+    padding-top:0px;
+    color:white; 
+    border-right: 1px dotted rgb(0, 0, 0);
+    border-radius: 30px;
+
+    }
+
+    body{background-color:rgba(46, 45, 45, 0.288);
+    }
+
+    p{
+        font-family:'Courier New', Courier, monospace;
+        font-weight:900;
+        font-size:30PX;
+        text-align:CENTER;
+        line-height:30PX;
+        letter-spacing:2px;
+        text-transform:capitalize;
+        float:left;
+
+
+
+        font-style:em;
+        font-style:italic;
+        background-color:rgb(175, 175, 175);
+        border-radius:3px;
+        margin-left:8cm
+        
+    }
+    .span1{
+        padding-right:3px;
+        border:1px solid white;
+        display:inline-block;
+        font-style:em;
+        font-style:italic;
+        animation: SmallShake 5s infinite linear;
+    }
+    span.text1{
+        font-size:10px;
+
+    }
+
+    span.text2{
+        font-family: PharmaCare, sans-serif;
+        font-size:30px;
+    }
+
+    span.italic{
+        font-style:underline;
+        color:white;
+
+    }
+
+    a {
+    color: rgb(255, 255, 255);
+    }
+
+    #movingtitle{
+        display:inline-block;
+        animation: move 5s infinite linear;
+
+    }
+
+    #pingyi{
+        display:inline-block;
+        animation: pingyi 5s infinite linear;
+    }
