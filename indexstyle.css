@@ -1,0 +1,26 @@
+
+.welcome{
+    text-align: center;
+    position: absolute;
+    left: 626px;
+    top: 330px;
+}
+
+.floaters{
+    filter:blur(3px);
+    color:rgb(187, 187, 187);
+    font-size:60px;
+    font-family:'Courier New', Courier, monospace;
+    position:absolute;
+    text-shadow: 10px;
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    from {
+        transform:translateX(-100%)
+    }
+    to{
+        transform:translateX(170%)
+    }
+}
